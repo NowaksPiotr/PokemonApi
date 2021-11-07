@@ -1,1 +1,99 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0 10%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#f7f7f7), color-stop(#e0e0e0), color-stop(#666666), to(#212121));
+  background: linear-gradient(white, #f7f7f7, #e0e0e0, #666666, #212121);
+}
+
+.test_wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.test_wrap .test {
+  margin: 1em;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.test_wrap .a {
+  background-color: #70559b;
+}
+
+.test_wrap .b {
+  background-color: #74cb48;
+}
+
+.test_wrap .c {
+  background-color: #fb5584;
+}
+
+.test_wrap .d {
+  background-color: #75574c;
+}
+
+.test_wrap .e {
+  background-color: #f9cf30;
+}
+
+.test_wrap .f {
+  background-color: #dec16b;
+}
+
+.test_wrap .g {
+  background-color: #7037ff;
+}
+
+.test_wrap .h {
+  background-color: #6493eb;
+}
+
+.test_wrap .i {
+  background-color: #aaa67f;
+}
+
+.test_wrap .j {
+  background-color: #c12239;
+}
+
+.test_wrap .k {
+  background-color: #9ad6df;
+}
+
+.test_wrap .l {
+  background-color: #a891ec;
+}
+
+.test_wrap .m {
+  background-color: #e69eac;
+}
+
+.test_wrap .n {
+  background-color: #b69e31;
+}
+
+.test_wrap .o {
+  background-color: #a7b723;
+}
+
+.test_wrap .p {
+  background-color: #b7b9d0;
+}
+
+.test_wrap .q {
+  background-color: #a43e9e;
+}
+
+.test_wrap .r {
+  background-color: #f57d31;
+}
+/*# sourceMappingURL=style.css.map */
