@@ -1,74 +1,26 @@
 @import "./variables";
+//=====================================
+//======== TABLE OF CONTENTS ==========
+//=====================================
+/*
+1. Global styles
+2.
+3.
+4.
+5.
+6.
 
-//test
-body {
-  margin: 0 10%;
-  background: linear-gradient($whiteColor, $backgroundColor-white-ish, $lightGrayColor, $mediumGrayColor, $darkGrayColor);
-}
-.test_wrap {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  .test {
-    margin: 1em;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-  }
-  .a {
-    background-color: $ghostColor;
-  }
-  .b {
-      background-color: $grassColor;
-  }
-  .c {
-      background-color: $psychicColor;
-  }
-  .d {
-      background-color: $darkColor;
-  }
-  .e {
-      background-color: $electricColor;
-  }
-  .f {
-      background-color: $groundColor;
-  }
-  .g {
-      background-color: $dragonColor;
-  }
-  .h {
-      background-color: $waterColor;
-  }
-  .i {
-      background-color: $normalColor;
-  }
-  .j {
-      background-color: $fightingColor;
-  }
-  .k {
-      background-color: $iceColor;
-  }
-  .l {
-      background-color: $flyingColor;
-  }
-  .m {
-      background-color: $fairyColor;
-  }
-  .n {
-      background-color: $rockColor;
-  }
-  .o {
-      background-color: $bugColor;
-  }
-  .p {
-      background-color: $steelColor;
-  }
-  .q {
-      background-color: $poisonColor;
-  }
-  .r {
-      background-color: $fireColor;
-  }
+
+
+*/
+//=====================================
+//=====================================
+//=====================================
+
+// 1. Global styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFontPoppins;
 }
