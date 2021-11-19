@@ -1,6 +1,6 @@
 /*
 1. Global styles
-2.
+2. Header
 3.
 4.
 5.
@@ -15,5 +15,115 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 1.5em 1em 0 1em;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  width: 100%;
+  padding: 0 0.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 65% 20%;
+      grid-template-columns: 15% 65% 20%;
+  grid-column-gap: 16px;
+}
+
+.page-title__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-title__wrapper .page-title {
+  font-size: 1.5em;
+}
+
+.pokeball-icon__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sort {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort-type__az {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5em 0.5em;
+      grid-template-rows: 0.5em 0.5em;
+  margin-right: 0.4em;
+}
+
+.sort-type__az .letter__a,
+.sort-type__az .letter__z {
+  font-size: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort-type__az .letter__a {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.down-arrow-icon__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pokeball-icon {
+  height: 1.5em;
+}
+
+.down-arrow-icon {
+  height: 1em;
 }
 /*# sourceMappingURL=style.css.map */

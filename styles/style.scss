@@ -4,7 +4,7 @@
 //=====================================
 /*
 1. Global styles
-2.
+2. Header
 3.
 4.
 5.
@@ -18,9 +18,75 @@
 //=====================================
 
 // 1. Global styles
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $mainFontPoppins;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFontPoppins;
+  font-size: 16px;
 }
+body {
+  margin: 1.5em 1em 0 1em;
+}
+
+//=====================================
+//=========== 2. HEADER ===============
+//=====================================
+.header__wrapper {
+  display: flex;
+  //   flex-direction: row;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  padding: 0 0.5em;
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+  grid-column-gap: 16px;
+}
+.page-title__wrapper {
+  display: flex;
+  align-items: center;
+  .page-title {
+    font-size: 1.5em;
+  }
+}
+.pokeball-icon__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sort {
+    width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sort-type__az {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5em 0.5em;
+  margin-right: 0.4em;
+  .letter__a,
+  .letter__z {
+      font-size: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  .letter__a {
+    justify-content: flex-end;
+  }
+}
+.down-arrow-icon__container {
+  display: flex;
+  align-items: center;
+}
+.pokeball-icon {
+  height: 1.5em;
+}
+.down-arrow-icon {
+  height: 1em;
+}
+//=====================================
+//=====================================
