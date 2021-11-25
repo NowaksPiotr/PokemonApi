@@ -22,13 +22,35 @@ body {
   margin: 1.5em 1em 0 1em;
 }
 
-.header__wrapper {
+.header__wrapper, .form__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: .5em;
+}
+
+.form__wrapper {
+  height: 1.5em;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form__wrapper form {
+  width: 100%;
+}
+
+.form__wrapper form .input-search {
+  width: inherit;
+  text-align: center;
+  border: none;
+}
+
+.form__wrapper form .input-search:focus {
+  outline: none;
 }
 
 .header {

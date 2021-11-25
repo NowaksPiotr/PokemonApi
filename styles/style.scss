@@ -32,10 +32,28 @@ body {
 //=====================================
 //=========== 2. HEADER ===============
 //=====================================
-.header__wrapper {
+.header__wrapper, .form__wrapper {
   display: flex;
-  //   flex-direction: row;
   align-items: center;
+  margin-bottom: .5em;
+}
+
+.form__wrapper{
+  height: 1.5em;
+  border: 1px solid $lightGrayColor;
+  border-radius: 10px;
+  overflow: hidden;
+  form{
+    width: 100%;
+    .input-search{
+      width: inherit;
+      text-align: center;
+      border: none;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
 }
 .header {
   width: 100%;
@@ -88,7 +106,5 @@ body {
 .down-arrow-icon {
   height: 1em;
 }
-
-asdasdads
 //=====================================
 //=====================================
