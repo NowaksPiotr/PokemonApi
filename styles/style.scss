@@ -29,29 +29,48 @@ body {
   margin: 1.5em 1em 0 1em;
 }
 
+.flex-vCenter-hCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 //=====================================
 //=========== 2. HEADER ===============
 //=====================================
-.header__wrapper, .form__wrapper {
+.header__wrapper,
+.form__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-.form__wrapper{
+.form__wrapper {
   height: 1.5em;
   border: 1px solid $lightGrayColor;
   border-radius: 10px;
   overflow: hidden;
-  form{
+  form {
     width: 100%;
-    .input-search{
+    position: relative;
+    .input-search {
       width: inherit;
-      text-align: center;
+      // text-align: center;
+      padding: 0 0 0 2.5em;
       border: none;
-      &:focus{
+      &:focus {
         outline: none;
       }
+    }
+    &::before{
+      content: '';
+      background: url(../assets/icons/magn_glass.svg);
+      background-size: cover;
+      position: absolute;
+      height: 1em;
+      width: 1em;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1em;
     }
   }
 }
@@ -59,8 +78,7 @@ body {
   width: 100%;
   padding: 0 0.5em;
   display: grid;
-  grid-template-columns: 15% 65% 20%;
-  grid-column-gap: 16px;
+  grid-template-columns: 15% 70% 15%;
 }
 .page-title__wrapper {
   display: flex;
@@ -73,27 +91,21 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .sort {
-    width: fit-content;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
 }
 .sort-type__az {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5em 0.5em;
+  row-gap: 0.1em;
   margin-right: 0.4em;
   .letter__a,
   .letter__z {
-      font-size: 0.5em;
-    display: flex;
-    align-items: center;
-  }
-  .letter__a {
-    justify-content: flex-end;
+    font-size: 0.5em;
   }
 }
 .down-arrow-icon__container {
@@ -104,7 +116,7 @@ body {
   height: 1.5em;
 }
 .down-arrow-icon {
-  height: 1em;
+  height: 1.2em;
 }
 //=====================================
 //=====================================
