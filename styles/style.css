@@ -63,6 +63,7 @@ body {
   width: inherit;
   padding: 0 0 0 2.5em;
   border: none;
+  text-transform: lowercase;
 }
 
 .form__wrapper form .input-search:focus {
