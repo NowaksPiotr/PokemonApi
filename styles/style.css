@@ -69,17 +69,18 @@ body {
   outline: none;
 }
 
-.form__wrapper form::before {
-  content: "";
+.form__wrapper form .button-search {
   background: url(../assets/icons/magn_glass.svg);
   background-size: cover;
   position: absolute;
+  border: none;
   height: 1em;
   width: 1em;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 1em;
+  cursor: pointer;
 }
 
 .header {

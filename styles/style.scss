@@ -62,16 +62,18 @@ body {
         outline: none;
       }
     }
-    &::before {
-      content: "";
+    .button-search {
+      // content: "";
       background: url(../assets/icons/magn_glass.svg);
       background-size: cover;
       position: absolute;
+      border: none;
       height: 1em;
       width: 1em;
       top: 50%;
       transform: translateY(-50%);
       left: 1em;
+      cursor: pointer;
     }
   }
 }
