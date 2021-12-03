@@ -201,8 +201,80 @@ body {
 .pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name {
   height: 1.5em;
   width: 100%;
-  font-size: .7em;
+  font-size: 0.7em;
   color: white;
   text-align: center;
+}
+
+.pokemon-cards__wrapper .pokemon-card--rock {
+  border: 1px solid #b69e31;
+}
+
+.pokemon-cards__wrapper .pokemon-card--ghost {
+  border: 1px solid #70559b;
+}
+
+.pokemon-cards__wrapper .pokemon-card--steel {
+  border: 1px solid #b7b9d0;
+}
+
+.pokemon-cards__wrapper .pokemon-card--water {
+  border: 1px solid #6493eb;
+}
+
+.pokemon-cards__wrapper .pokemon-card--grass {
+  border: 1px solid #74cb48;
+}
+
+.pokemon-cards__wrapper .pokemon-card--psychic {
+  border: 1px solid #fb5584;
+}
+
+.pokemon-cards__wrapper .pokemon-card--ice {
+  border: 1px solid #9ad6df;
+}
+
+.pokemon-cards__wrapper .pokemon-card--dark {
+  border: 1px solid #75574c;
+}
+
+.pokemon-cards__wrapper .pokemon-card--fairy {
+  border: 1px solid #e69eac;
+}
+
+.pokemon-cards__wrapper .pokemon-card--normal {
+  border: 1px solid #aaa67f;
+}
+
+.pokemon-cards__wrapper .pokemon-card--fighting {
+  border: 1px solid #c12239;
+}
+
+.pokemon-cards__wrapper .pokemon-card--flying {
+  border: 1px solid #a891ec;
+}
+
+.pokemon-cards__wrapper .pokemon-card--poison {
+  border: 1px solid #a43e9e;
+}
+
+.pokemon-cards__wrapper .pokemon-card--ground {
+  border: 1px solid #dec16b;
+}
+
+.pokemon-cards__wrapper .pokemon-card--bug {
+  border: 1px solid #a7b723;
+}
+
+.pokemon-cards__wrapper .pokemon-card--fire {
+  border: 1px solid #f57d31;
+}
+
+.pokemon-cards__wrapper .pokemon-card--electric {
+  border: 1px solid #f9cf30;
+}
+
+.pokemon-cards__wrapper .pokemon-card--dragon {
+  border: 1px solid #7037ff;
 }
 /*# sourceMappingURL=style.css.map */

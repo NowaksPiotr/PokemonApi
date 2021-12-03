@@ -154,9 +154,65 @@ body {
       height: 1.5em;
       width: 100%;
       // background-color: $ghostColor;
-      font-size: .7em;
+      font-size: 0.7em;
       color: $whiteColor;
       text-align: center;
     }
+  }
+
+  // Variants of color of card border, depending on type of pokemon.
+  .pokemon-card--rock{
+    border: 1px solid $rockColor;
+  }
+  .pokemon-card--ghost{
+    border: 1px solid $ghostColor;
+  }
+  .pokemon-card--steel{
+    border: 1px solid $steelColor;
+  }
+  .pokemon-card--water{
+    border: 1px solid $waterColor;
+  }
+  .pokemon-card--grass{
+    border: 1px solid $grassColor;
+  }
+  .pokemon-card--psychic{
+    border: 1px solid $psychicColor;
+  }
+  .pokemon-card--ice{
+    border: 1px solid $iceColor;
+  }
+  .pokemon-card--dark{
+    border: 1px solid $darkColor;
+  }
+  .pokemon-card--fairy{
+    border: 1px solid $fairyColor;
+  }
+  .pokemon-card--normal{
+    border: 1px solid $normalColor;
+  }
+  .pokemon-card--fighting{
+    border: 1px solid $fightingColor;
+  }
+  .pokemon-card--flying{
+    border: 1px solid $flyingColor;
+  }
+  .pokemon-card--poison{
+    border: 1px solid $poisonColor;
+  }
+  .pokemon-card--ground{
+    border: 1px solid $groundColor;
+  }
+  .pokemon-card--bug{
+    border: 1px solid $bugColor;
+  }
+  .pokemon-card--fire{
+    border: 1px solid $fireColor;
+  }
+  .pokemon-card--electric{
+    border: 1px solid $electricColor;
+  }
+  .pokemon-card--dragon{
+    border: 1px solid $dragonColor;
   }
 }
