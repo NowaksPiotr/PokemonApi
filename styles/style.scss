@@ -138,14 +138,67 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // border: 1px solid $ghostColor;
     border-radius: 0.5em;
     overflow: hidden;
     .pokemon-card__header {
       width: 100%;
-      padding: 0.25em 0.5em 0 0.5em;
-      text-align: right;
       font-size: 0.5em;
+      padding: 0.5em 1em 0 1em;
+      text-align: right;
+    }
+    .pokemon-card__header--rock {
+      color: $rockColor;
+    }
+    .pokemon-card__header--ghost {
+      color: $ghostColor;
+    }
+    .pokemon-card__header--steel {
+      color: $steelColor;
+    }
+    .pokemon-card__header--water {
+      color: $waterColor;
+    }
+    .pokemon-card__header--grass {
+      color: $grassColor;
+    }
+    .pokemon-card__header--psychic {
+      color: $psychicColor;
+    }
+    .pokemon-card__header--ice {
+      color: $iceColor;
+    }
+    .pokemon-card__header--dark {
+      color: $darkColor;
+    }
+    .pokemon-card__header--fairy {
+      color: $fairyColor;
+    }
+    .pokemon-card__header--normal {
+      color: $normalColor;
+    }
+    .pokemon-card__header--fighting {
+      color: $fightingColor;
+    }
+    .pokemon-card__header--flying {
+      color: $flyingColor;
+    }
+    .pokemon-card__header--poison {
+      color: $poisonColor;
+    }
+    .pokemon-card__header--ground {
+      color: $groundColor;
+    }
+    .pokemon-card__header--bug {
+      color: $bugColor;
+    }
+    .pokemon-card__header--fire {
+      color: $fireColor;
+    }
+    .pokemon-card__header--electric {
+      color: $electricColor;
+    }
+    .pokemon-card__header--dragon {
+      color: $dragonColor;
     }
     .pokemon-card__sprite {
       width: 100%;
@@ -153,66 +206,119 @@ body {
     .pokemon-card__pokemon-name {
       height: 1.5em;
       width: 100%;
-      // background-color: $ghostColor;
       font-size: 0.7em;
       color: $whiteColor;
       text-align: center;
     }
+    .pokemon-card__pokemon-name--rock {
+      background-color: $rockColor;
+    }
+    .pokemon-card__pokemon-name--ghost {
+      background-color: $ghostColor;
+    }
+    .pokemon-card__pokemon-name--steel {
+      background-color: $steelColor;
+    }
+    .pokemon-card__pokemon-name--water {
+      background-color: $waterColor;
+    }
+    .pokemon-card__pokemon-name--grass {
+      background-color: $grassColor;
+    }
+    .pokemon-card__pokemon-name--psychic {
+      background-color: $psychicColor;
+    }
+    .pokemon-card__pokemon-name--ice {
+      background-color: $iceColor;
+    }
+    .pokemon-card__pokemon-name--dark {
+      background-color: $darkColor;
+    }
+    .pokemon-card__pokemon-name--fairy {
+      background-color: $fairyColor;
+    }
+    .pokemon-card__pokemon-name--normal {
+      background-color: $normalColor;
+    }
+    .pokemon-card__pokemon-name--fighting {
+      background-color: $fightingColor;
+    }
+    .pokemon-card__pokemon-name--flying {
+      background-color: $flyingColor;
+    }
+    .pokemon-card__pokemon-name--poison {
+      background-color: $poisonColor;
+    }
+    .pokemon-card__pokemon-name--ground {
+      background-color: $groundColor;
+    }
+    .pokemon-card__pokemon-name--bug {
+      background-color: $bugColor;
+    }
+    .pokemon-card__pokemon-name--fire {
+      background-color: $fireColor;
+    }
+    .pokemon-card__pokemon-name--electric {
+      background-color: $electricColor;
+    }
+    .pokemon-card__pokemon-name--dragon {
+      background-color: $dragonColor;
+    }
   }
 
   // Variants of color of card border, depending on type of pokemon.
-  .pokemon-card--rock{
+  .pokemon-card--rock {
     border: 1px solid $rockColor;
   }
-  .pokemon-card--ghost{
+  .pokemon-card--ghost {
     border: 1px solid $ghostColor;
   }
-  .pokemon-card--steel{
+  .pokemon-card--steel {
     border: 1px solid $steelColor;
   }
-  .pokemon-card--water{
+  .pokemon-card--water {
     border: 1px solid $waterColor;
   }
-  .pokemon-card--grass{
+  .pokemon-card--grass {
     border: 1px solid $grassColor;
   }
-  .pokemon-card--psychic{
+  .pokemon-card--psychic {
     border: 1px solid $psychicColor;
   }
-  .pokemon-card--ice{
+  .pokemon-card--ice {
     border: 1px solid $iceColor;
   }
-  .pokemon-card--dark{
+  .pokemon-card--dark {
     border: 1px solid $darkColor;
   }
-  .pokemon-card--fairy{
+  .pokemon-card--fairy {
     border: 1px solid $fairyColor;
   }
-  .pokemon-card--normal{
+  .pokemon-card--normal {
     border: 1px solid $normalColor;
   }
-  .pokemon-card--fighting{
+  .pokemon-card--fighting {
     border: 1px solid $fightingColor;
   }
-  .pokemon-card--flying{
+  .pokemon-card--flying {
     border: 1px solid $flyingColor;
   }
-  .pokemon-card--poison{
+  .pokemon-card--poison {
     border: 1px solid $poisonColor;
   }
-  .pokemon-card--ground{
+  .pokemon-card--ground {
     border: 1px solid $groundColor;
   }
-  .pokemon-card--bug{
+  .pokemon-card--bug {
     border: 1px solid $bugColor;
   }
-  .pokemon-card--fire{
+  .pokemon-card--fire {
     border: 1px solid $fireColor;
   }
-  .pokemon-card--electric{
+  .pokemon-card--electric {
     border: 1px solid $electricColor;
   }
-  .pokemon-card--dragon{
+  .pokemon-card--dragon {
     border: 1px solid $dragonColor;
   }
 }

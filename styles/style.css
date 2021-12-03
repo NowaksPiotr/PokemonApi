@@ -189,9 +189,81 @@ body {
 
 .pokemon-cards__wrapper .pokemon-card .pokemon-card__header {
   width: 100%;
-  padding: 0.25em 0.5em 0 0.5em;
-  text-align: right;
   font-size: 0.5em;
+  padding: 0.5em 1em 0 1em;
+  text-align: right;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--rock {
+  color: #b69e31;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--ghost {
+  color: #70559b;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--steel {
+  color: #b7b9d0;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--water {
+  color: #6493eb;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--grass {
+  color: #74cb48;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--psychic {
+  color: #fb5584;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--ice {
+  color: #9ad6df;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--dark {
+  color: #75574c;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--fairy {
+  color: #e69eac;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--normal {
+  color: #aaa67f;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--fighting {
+  color: #c12239;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--flying {
+  color: #a891ec;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--poison {
+  color: #a43e9e;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--ground {
+  color: #dec16b;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--bug {
+  color: #a7b723;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--fire {
+  color: #f57d31;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--electric {
+  color: #f9cf30;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__header--dragon {
+  color: #7037ff;
 }
 
 .pokemon-cards__wrapper .pokemon-card .pokemon-card__sprite {
@@ -204,6 +276,78 @@ body {
   font-size: 0.7em;
   color: white;
   text-align: center;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--rock {
+  background-color: #b69e31;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--ghost {
+  background-color: #70559b;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--steel {
+  background-color: #b7b9d0;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--water {
+  background-color: #6493eb;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--grass {
+  background-color: #74cb48;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--psychic {
+  background-color: #fb5584;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--ice {
+  background-color: #9ad6df;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--dark {
+  background-color: #75574c;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--fairy {
+  background-color: #e69eac;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--normal {
+  background-color: #aaa67f;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--fighting {
+  background-color: #c12239;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--flying {
+  background-color: #a891ec;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--poison {
+  background-color: #a43e9e;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--ground {
+  background-color: #dec16b;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--bug {
+  background-color: #a7b723;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--fire {
+  background-color: #f57d31;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--electric {
+  background-color: #f9cf30;
+}
+
+.pokemon-cards__wrapper .pokemon-card .pokemon-card__pokemon-name--dragon {
+  background-color: #7037ff;
 }
 
 .pokemon-cards__wrapper .pokemon-card--rock {
