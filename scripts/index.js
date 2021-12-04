@@ -1,4 +1,4 @@
-const url = 'https://pokeapi.co/api/v2/pokemon/';
+const url = "https://pokeapi.co/api/v2/pokemon/";
 
 /* 
 1. User enter pokemon name.
@@ -10,38 +10,77 @@ const url = 'https://pokeapi.co/api/v2/pokemon/';
 */
 
 // VARIABLES
-const searchButton = document.querySelector('.button-search');
-const input = document.getElementById('search');
-const cardsWrapper = document.querySelector('.pokemon-cards__wrapper');
+const searchButton = document.querySelector(".button-search");
+const input = document.getElementById("search");
+const cardsWrapper = document.querySelector(".pokemon-cards__wrapper");
 
 // Class to make pokemon card
-class PokemonCard{
-  constructor(){
+// Access to pokemon info:
+/*
+ data.id = id number of pokemon
+ data.sprites.front_default = pokemon sprite
 
+ */
+
+class PokemonCard {
+  constructor(id, name, sprite, type) {
+    this.id = id;
+    this.name = name;
+    this.sprite = sprite;
+    this.type = type;
   }
 
-  createCard(){
-    <div class="pokemon-card">
-    <div class="pokemon-card__header pokemon-card__header--psychic"></div>
-    <div class="pokemon-card__sprite flex-vCenter-hCenter"></div>
-    <div class="pokemon-card__pokemon-name"></div>
-  </div>
-  let mainDiv = document.createElement('div');
-  let headerDiv = document.createElement('div');
-  let spriteWrapper = document.createElement('div');
-  let nameDiv = document.createElement('div');
-  let pokemonSprite = document.createElement('img');
-  mainDiv.classList.add('pokemon-card');
-  // mainDiv.classList.add('pokemon-card--type'); <-- here will be defined border color
-  headerDiv.classList.add('pokemon-card__header');
-  // headerDiv.classList.add('pokemon-card__header--type'); <-- here will be defined font color
-  spriteWrapper.classList.add('pokemon-card__sprite');
-  spriteWrapper.classList.add('flex-vCenter-hCenter');
+  createCard() {
+    let mainDiv = document.createElement("div");
+    let headerDiv = document.createElement("div");
+    let spriteWrapper = document.createElement("div");
+    let nameDiv = document.createElement("div");
+    let pokemonSprite = document.createElement("img");
+    mainDiv.classList.add("pokemon-card");
+    mainDiv.classList.add("pokemon-card--" + this.type);
+    headerDiv.classList.add("pokemon-card__header");
+    headerDiv.classList.add("pokemon-card__header--" + this.type);
+    headerDiv.innerText = "#" + this.id;
+    spriteWrapper.classList.add("pokemon-card__sprite");
+    spriteWrapper.classList.add("flex-vCenter-hCenter");
+    pokemonSprite.setAttribute("src", this.sprite);
+    nameDiv.classList.add("pokemon-card__pokemon-name");
+    nameDiv.classList.add("pokemon-card__pokemon-name--" + this.type);
+    nameDiv.innerText = this.name;
+    mainDiv.append(headerDiv);
+    spriteWrapper.append(pokemonSprite);
+    mainDiv.append(spriteWrapper);
+    mainDiv.append(nameDiv);
+
+    return mainDiv;
   }
 }
 
-//placeholder
-searchButton.addEventListener('click', ()=>{alert('You pressed the button! Input value is: ' + input.value)});
-//placeholder
+searchButton.addEventListener("click", () => {
+  let sin = input.value.toLowerCase();
+  searchIt(sin);
+});
 
-fetch(url + input.value).then(response => response.json()).then(data => console.log(data));
+function searchIt(query) {
+  if(query != ''){
+  fetch(url + query)
+    .then((response) => response.json())
+    .then((data) => {
+      showIt(data);
+    });
+  }else{
+    console.log('no entry');
+  }
+}
+
+
+  function showIt(data) {
+    cardsWrapper.append(
+      new PokemonCard(
+        data.id,
+        data.name,
+        data.sprites.front_default,
+        data.types[0].type.name
+      ).createCard()
+    );
+  }
