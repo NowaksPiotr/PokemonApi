@@ -136,7 +136,7 @@ body {
   .pokemon-card {
     width: 100%;
     min-width: 0;
-    min-height: 7em;
+    // min-height: 7em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -209,8 +209,10 @@ body {
       height: 1.5em;
       width: 100%;
       font-size: 0.7em;
+      border-radius: 0 0 0.5rem 0.5rem;
       color: $whiteColor;
       text-align: center;
+      text-transform: capitalize;
     }
     .pokemon-card__pokemon-name--rock {
       background-color: $rockColor;
@@ -270,57 +272,75 @@ body {
 
   // Variants of color of card border, depending on type of pokemon.
   .pokemon-card--rock {
+    background-color: $rockColor;
     border: 1px solid $rockColor;
   }
   .pokemon-card--ghost {
+    background-color: $ghostColor;
     border: 1px solid $ghostColor;
   }
   .pokemon-card--steel {
+    background-color: $steelColor;
     border: 1px solid $steelColor;
   }
   .pokemon-card--water {
+    background-color: $waterColor;
     border: 1px solid $waterColor;
   }
   .pokemon-card--grass {
+    background-color: $grassColor;
     border: 1px solid $grassColor;
   }
   .pokemon-card--psychic {
+    background-color: $psychicColor;
     border: 1px solid $psychicColor;
   }
   .pokemon-card--ice {
+    background-color: $iceColor;
     border: 1px solid $iceColor;
   }
   .pokemon-card--dark {
+    background-color: $darkColor;
     border: 1px solid $darkColor;
   }
   .pokemon-card--fairy {
+    background-color: $fairyColor;
     border: 1px solid $fairyColor;
   }
   .pokemon-card--normal {
+    background-color: $normalColor;
     border: 1px solid $normalColor;
   }
   .pokemon-card--fighting {
+    background-color: $fightingColor;
     border: 1px solid $fightingColor;
   }
   .pokemon-card--flying {
+    background-color: $flyingColor;
     border: 1px solid $flyingColor;
   }
   .pokemon-card--poison {
+    background-color: $poisonColor;
     border: 1px solid $poisonColor;
   }
   .pokemon-card--ground {
+    background-color: $groundColor;
     border: 1px solid $groundColor;
   }
   .pokemon-card--bug {
+    background-color: $bugColor;
     border: 1px solid $bugColor;
   }
   .pokemon-card--fire {
+    background-color: $fireColor;
     border: 1px solid $fireColor;
   }
   .pokemon-card--electric {
+    background-color: $electricColor;
     border: 1px solid $electricColor;
   }
   .pokemon-card--dragon {
+    background-color: $dragonColor;
     border: 1px solid $dragonColor;
   }
 }
