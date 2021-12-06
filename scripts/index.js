@@ -10,8 +10,9 @@ const url = "https://pokeapi.co/api/v2/pokemon/";
 */
 
 // VARIABLES
-const searchButton = document.querySelector(".button-search");
+const searchForm = document.querySelector("#form-search");
 const input = document.getElementById("search");
+const searchButton = document.querySelector(".button-search");
 const cardsWrapper = document.querySelector(".pokemon-cards__wrapper");
 
 // Class to make pokemon card
@@ -19,7 +20,7 @@ const cardsWrapper = document.querySelector(".pokemon-cards__wrapper");
 /*
  data.id = id number of pokemon
  data.sprites.front_default = pokemon sprite
-
+ data.types[] <- array of types
  */
 
 class PokemonCard {
@@ -56,31 +57,40 @@ class PokemonCard {
   }
 }
 
+// Function that prevents to reload when enter is pressed
+
+input.addEventListener("keydown", (e) => {
+  if (e.code == "Enter") {
+    e.preventDefault();
+    let inputVal = input.value.toLowerCase();
+    searchIt(inputVal);
+  }
+});
+
 searchButton.addEventListener("click", () => {
-  let sin = input.value.toLowerCase();
-  searchIt(sin);
+  let inputVal = input.value.toLowerCase();
+  searchIt(inputVal);
 });
 
 function searchIt(query) {
-  if(query != ''){
-  fetch(url + query)
-    .then((response) => response.json())
-    .then((data) => {
-      showIt(data);
-    });
-  }else{
-    console.log('no entry');
+  if (query != "") {
+    fetch(url + query)
+      .then((response) => response.json())
+      .then((data) => {
+        showIt(data);
+      });
+  } else {
+    console.log("no entry");
   }
 }
 
-
-  function showIt(data) {
-    cardsWrapper.append(
-      new PokemonCard(
-        data.id,
-        data.name,
-        data.sprites.front_default,
-        data.types[0].type.name
-      ).createCard()
-    );
-  }
+function showIt(data) {
+  cardsWrapper.append(
+    new PokemonCard(
+      data.id,
+      data.name,
+      data.sprites.front_default,
+      data.types[0].type.name
+    ).createCard()
+  );
+}
