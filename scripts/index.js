@@ -60,7 +60,8 @@ class PokemonCard {
 // Function that prevents to reload when enter is pressed
 
 input.addEventListener("keydown", (e) => {
-  if (e.code == "Enter") {
+  if (e.code == "Enter" || e.code == 13) {
+    console.log(e.code);
     e.preventDefault();
     let inputVal = input.value.toLowerCase();
     searchIt(inputVal);
