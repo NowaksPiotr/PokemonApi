@@ -8,7 +8,11 @@ const url = "https://pokeapi.co/api/v2/pokemon/";
 3. Afrer succesfull response pokemon cards with number of pokemon, default front sprite, and pokemon name will be displayed.
 ~~~~~~~ More features soon ~~~~~~~ 
 */
-
+const test = document.querySelector('#test');
+let span = document.querySelector('.fortest');
+test.addEventListener('keydown', (e)=>{
+  span.innerText = e.code;
+})
 // VARIABLES
 const searchForm = document.querySelector("#form-search");
 const input = document.getElementById("search");
