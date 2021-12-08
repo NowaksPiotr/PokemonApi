@@ -59,17 +59,18 @@ class PokemonCard {
 // Function that prevents to reload when enter is pressed
 
 input.addEventListener("keydown", (e) => {
-  if (e.code == "Enter" || e.code == 13) {
-    console.log(e.code);
+  if (e.code == "Enter" || e.code == 13 || e.code == "NumpadEnter") {
     e.preventDefault();
     let inputVal = input.value.toLowerCase();
     searchIt(inputVal);
+    input.value = '';
   }
 });
 
 searchButton.addEventListener("click", () => {
   let inputVal = input.value.toLowerCase();
   searchIt(inputVal);
+  input.value = '';
 });
 
 function searchIt(query) {
@@ -78,9 +79,24 @@ function searchIt(query) {
       .then((response) => response.json())
       .then((data) => {
         showIt(data);
+      })
+      .catch((err)=>{
+        console.log(err);
+        alert("I'm sorry, try again!");
       });
   } else {
-    console.log("no entry");
+    for(let i=1; i<=12; i++){
+      let randQ = Math.floor(Math.random()*897);
+      fetch(url + randQ)
+      .then((response) => response.json())
+      .then((data) => {
+        showIt(data);
+      })
+      .catch((err)=>{
+        console.log(err);
+        alert("I'm sorry, try again!");
+      });
+    }
   }
 }
 
